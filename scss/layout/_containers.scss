@@ -1,0 +1,60 @@
+
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid $color-prim;
+  margin: 105px 0 60px;
+  background: #434a52 url('#{$path-img}/bear.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0, .8);
+  border-radius: $br;
+
+  @media #{$brk-wide} {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
+
+.main-header, {
+  @media #{$brk-narrow} {
+    max-height: 380px;
+    padding: 50px 25px 0
+  }
+}
+
+.primary-content {
+  @extend %centered;
+  @extend %t-border;
+  @extend %content;
+	padding-top: 25px;
+  padding-bottom: 95px;
+
+  @media #{$brk-wide} {
+    width: 90%;
+  }
+
+  @media #{$brk-narrow} {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
+
+.secondary-content {
+  @extend %t-border;
+  @extend %content;
+  @extend %clearfix;
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6;
+
+  @media #{$brk-wide} {
+    width: 90%;
+  }
+
+  @media #{$brk-narrow} {
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
+}
